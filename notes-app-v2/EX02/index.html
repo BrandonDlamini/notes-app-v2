@@ -1,0 +1,27 @@
+
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Print contents of page</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <button id = "Print-button" onclick="printThisPage"> print</button>
+    <p>These are the contents that are going to be printed</p>
+    <script type="text/javascript">
+
+
+    const printer = document.getElementById('Print-button');
+
+    // printing arrow function
+    const printPage = () => window.print();
+
+    // event listener for printing
+    printer.addEventListener("click",printPage);
+
+
+
+
+    </script>
+    </body>
+  </html>
