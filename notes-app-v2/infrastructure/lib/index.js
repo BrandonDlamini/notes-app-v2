@@ -7,5 +7,7 @@ export default function main(app) {
 
   new S3Stack(app, "s3");
 
-  new CognitoStack(app, "coginito");
+  nnew CognitoStack(app, "cognito", { bucketArn: s3.bucket.bucketArn });
+
+
 }
